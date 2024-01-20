@@ -1,0 +1,43 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/storage": "^7.3.0",
+    "@hokify/agenda": "^6.3.0",
+    "axios": "^1.5.1",
+    "cloudinary": "^1.41.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "datauri": "^4.1.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-actuator": "^1.8.4",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-useragent": "^1.0.15",
+    "form-data": "^4.0.0",
+    "helmet": "^7.0.0",
+    "http-status": "^1.7.0",
+    "image-hash": "^5.3.2",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "mime-types": "^2.1.35",
+    "mongoose": "^7.6.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "node-ipinfo": "^3.4.6",
+    "redis": "3",
+    "replicate": "^0.20.1",
+    "request": "^2.88.2",
+    "request-ip": "^3.3.0",
+    "sharp": "^0.32.6",
+    "underscore": "^1.13.6",
+    "winston": "^3.11.0",
+    "xss-clean": "^0.1.4"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  }
+}

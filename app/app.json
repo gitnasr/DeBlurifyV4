@@ -1,0 +1,69 @@
+{
+  "expo": {
+    "name": "DeBlurify",
+    "slug": "deblurify",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "extra": {
+      "supportsRTL": true,
+      "eas": {
+        "projectId": "0164cd75-22a8-483d-8499-0e0cad3fb3da"
+      }
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "ExpoLocalization_supportsRTL": true
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.gitnasr.deblurify",
+      "googleServicesFile": "./google-services.json",
+      "versionCode": 3
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-localization",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "extraProguardRules": "-keep class com.google.android.gms.internal.consent_sdk.** { *; }"
+          }
+        }
+      ],
+      "@react-native-firebase/app",
+      "@react-native-firebase/perf",
+      "@react-native-firebase/crashlytics",
+      "@react-native-firebase/auth"
+    ],
+    "owner": "gitnasr",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/0164cd75-22a8-483d-8499-0e0cad3fb3da"
+    }
+  },
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-1448615926129907~8759816138",
+    "user_tracking_usage_description": "This identifier will be used to deliver personalized ads to you.",
+    "delay_app_measurement_init": true
+  }
+}
